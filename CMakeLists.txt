@@ -19,6 +19,12 @@ set(PROJECT_SOURCES
         mainwindow.cpp
         mainwindow.h
         mainwindow.ui
+        QueryDialog.h
+        QueryDialog.cpp
+        QueryDialog.ui
+        BuyTicketDialog.h
+        BuyTicketDialog.cpp
+        BuyTicketDialog.ui
         ${TS_FILES}
 )
 
@@ -49,6 +55,7 @@ else()
     qt5_create_translation(QM_FILES ${CMAKE_SOURCE_DIR} ${TS_FILES})
 endif()
 
+# 使用PRIVATE关键字链接库
 target_link_libraries(DisneyTicketSystem PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
@@ -75,3 +82,4 @@ install(TARGETS DisneyTicketSystem
 if(QT_VERSION_MAJOR EQUAL 6)
     qt_finalize_executable(DisneyTicketSystem)
 endif()
+message(STATUS "=== CMake配置完成 ===")
