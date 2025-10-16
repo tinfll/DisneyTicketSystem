@@ -25,14 +25,7 @@ BuyTicketDialog::BuyTicketDialog(QWidget *parent)
     ui->quantitySpinBox->setWrapping(true);  // 允许循环
 
 
-    // 连接按钮信号
-    /*connect(ui->calculateButton, &QPushButton::clicked, this, &BuyTicketDialog::on_calculateButton_clicked);
-    connect(ui->buyButton, &QPushButton::clicked, this, &BuyTicketDialog::on_buyButton_clicked);
-    connect(ui->clearButton, &QPushButton::clicked, this, &BuyTicketDialog::on_clearButton_clicked);
-    connect(ui->backButton, &QPushButton::clicked, this, &BuyTicketDialog::on_backButton_clicked);*/
 
-    // 新增：移除按钮
-    //connect(ui->removeButton, &QPushButton::clicked, this, &BuyTicketDialog::on_removeButton_clicked);
 
     // 初始化购物车显示
     ui->cartText->setPlainText("购物车为空");
