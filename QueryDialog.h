@@ -24,10 +24,10 @@ private:
     Ui::QueryDialog *ui;
 
     // 票价数据
-    double childPrices[4] = {375, 425, 599, 699};
-    double adultPrices[4] = {475, 525, 699, 799};
-    double seniorPrices[4] = {350, 400, 550, 650};
-    double disablePrices[4] = {338, 383, 539, 629};
+    double childPrices[4] = {356, 404, 494, 599};
+    double adultPrices[4] = {475, 539, 659, 799};
+    double seniorPrices[4] = {356, 404, 494, 599};
+    double disablePrices[4] = {428, 485, 593, 719};
 
     // 辅助函数
     int getDateType(const QString& date);
